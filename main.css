@@ -1,0 +1,148 @@
+:root {
+    --BG_Color: #0E0C0C;
+    --Main_Color: #5AADFF;
+    --Inner_Color: #1F1B1B;
+    --Button_Color: var(--Inner_Color);
+    --Button_Hover_Color: #2C2727;
+    --Button_Active_Color: #3b3434;
+    --Line_Thickness: 4px;
+    --Header_Font_Size: 3em;
+    --Paragraph_Font_Size: 2em;
+    --Button_FontSize: 2em;
+    --Button_Font_Size: 1.5em;
+    --Text_Color: #e2e2e2;
+
+    --Image_Border_Color: var(--Main_Color);
+
+    --Image_Fade_Transition_Time: 0.5s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--BG_Color);
+}
+
+h1 {
+    font-size: var(--Header_Font_Size);
+    color: var(--Text_Color);
+}
+
+p {
+    font-size: var(--Paragraph_Font_Size);
+    padding: 20px 0 20px 25px;
+    color: var(--Text_Color);
+}
+
+li {
+    padding-bottom: 25px;
+    color: var(--Text_Color);
+}
+
+.header {
+    padding: 25px;
+
+    border-bottom: var(--Line_Thickness) solid var(--Main_Color);
+    background-color: var(--Inner_Color);
+}
+
+.navigation-bar {
+    width: 300px;
+    height: 650px;
+    border-right: var(--Line_Thickness) solid var(--Main_Color);
+    border-bottom: var(--Line_Thickness) solid var(--Main_Color);
+    background-color: var(--Inner_Color);
+}
+
+.navigation-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    color: var(--Text_Color);
+    background-color: var(--Button_Color);
+    justify-content: left;
+    text-align: left;
+    display: inline-block;
+    font-size: var(--Button_Font_Size);
+
+    background: linear-gradient(to right, var(--Button_Hover_Color) 25%, var(--Button_Color) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.navigation-bar-left {
+    float: left;
+}
+
+.navigation-bar-right {
+    float: right;
+}
+
+.navigation-button:hover {
+    background-color: var(--Button_Hover_Color);
+    background-position: left bottom;
+}
+
+img {
+    margin-left: 500px;
+    margin-top: 50px;
+    
+    border: var(--Line_Thickness) solid var(--Image_Border_Color);
+
+    /*opacity: 0.5;
+    transition:all var(--Image_Fade_Transition_Time) ease;*/
+}
+
+/*img:hover {
+    opacity: 1;
+}*/
+    
+
+iframe {
+    margin-left: 600px;
+    margin-top: 50px;
+    
+    border: var(--Line_Thickness) solid var(--Image_Border_Color);
+}
+
+button {
+    color: var(--Text_Color);
+    font-size: var(--Button_Font_Size);
+}
+
+button:hover {
+    background-color: var(--Button_Hover_Color);
+}
+
+.introduction {
+    width: auto;
+    height: 200px;
+    margin-left: 300px;
+    margin-top: -650px;
+    /*border-left: var(--Line_Thickness) solid var(--Main_Color);
+    border-top: var(--Line_Thickness) solid var(--Main_Color);*/
+    border-bottom: var(--Line_Thickness) solid var(--Main_Color);
+    background-color: var(--Inner_Color);
+}
+
+.panel {
+    margin: auto;
+    height: 200px;
+    margin-left: 300px;
+    margin-top: 50px;
+
+    border: var(--Line_Thickness) solid var(--Main_Color);
+
+    background-color: var(--Inner_Color);
+}
+
+/*navigation button icons*/
+
+.fa-home, .fa-info, .fa-bed, .fa-map {
+    padding-right: 50px;
+}

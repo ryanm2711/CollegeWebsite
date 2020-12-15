@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <TITLE>Vi & Jack's Bed & Breakfast - Rooms</TITLE>
+        <meta charset="UTF-8">
+        <meta name="description" content="My B&B assessment rooms page">
+        <meta name="keywords" content="Views ensuite B&B rooms leisure">
+        <meta name="author" content="Ryan Maybury">
+
+        <link rel="stylesheet" href="main.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    </head>
+    <script>
+        function enterHover(element) {
+            element.setAttribute("src", "materials/rooms/room2/room2_02.png");
+        }
+
+        function exitHover(element) {
+            element.setAttribute("src", "materials/rooms/room2/room2_01.png");
+        }
+    </script>
+    <body>
+        <div class="header">
+            <h1>Vi & Jack’s Bed & Breakfast Room Two</h1>
+        </div>
+        <div class="navigation-bar">
+            <form action="home.html">
+                <button class="navigation-button"><i class="fas fa-home"></i>Home</button>
+            </form>
+            <form action="information.html">
+                <button class="navigation-button"><i class="fas fa-info"></i>Information</button>
+            </form>
+            <form action="room1.html">
+                <button class="navigation-button"><i class="fas fa-bed"></i>Room One</button>
+            </form>
+            <form action="room2.html">
+                <button class="navigation-button"><i class="fas fa-bed"></i>Room Two</button>
+            </form>
+            <form action="room3.html">
+                <button class="navigation-button"><i class="fas fa-bed"></i>Room Three</button>
+            </form>
+            <form action="room4.html">
+                <button class="navigation-button"><i class="fas fa-bed"></i>Room Four</button>
+            </form>
+            <form action="map.html">
+                <button class="navigation-button"><i class="fas fa-map"></i>Map</button>
+            </form>
+        </div>
+
+        <div class="introduction">
+            <p>Room name goes here.</p>
+        </div>
+
+        <div class="panel" style="margin-left: 375px; margin-right: 75px;">
+            <p>Information on the room such as prices here.</p>
+        </div>
+
+        <img class="RoomOverlay" src="materials/rooms/room2/room2_01.png" width="1200" height="512" onmouseover="enterHover(this);" onmouseout="exitHover(this);">
+
+        <button onclick=window.print() class="panel" style="width: 453px; margin-left: 875px; margin-right: 575pxl">Print Page</button>
+    </body>
+</html>
